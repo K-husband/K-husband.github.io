@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>북크트리 개인정보처리방침</title>
+<meta name="description" content="북크트리 앱이 어떤 정보를 어디에 두고, 무엇을 밖으로 보내는지.">
+<!-- 이 쪽은 외부 글꼴·분석 스크립트를 부르지 않습니다. 방침을 읽는 사람의
+     접속 기록이 다른 회사로 가지 않게 하려는 것입니다. -->
+<style>
+  :root {
+    --paper: #F4F0E6; --surface: #FFFDF7; --ink: #2F3A31; --muted: #646E5F;
+    --faint: #6E7869; --line: #E2DACA; --leaf: #2A7047; --leaf-wash: #E7F0E2;
+    --body: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #151A17; --surface: #1E241F; --ink: #E8EFE6; --muted: #A9B5A6;
+      --faint: #7B8778; --line: #37423A; --leaf: #74C98A; --leaf-wash: #23301F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #151A17; --surface: #1E241F; --ink: #E8EFE6; --muted: #A9B5A6;
+    --faint: #7B8778; --line: #37423A; --leaf: #74C98A; --leaf-wash: #23301F;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.8 var(--body);
+         -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 32px; }
+  .eyebrow { font-size: 12px; letter-spacing: .08em; color: var(--faint); margin: 0 0 6px; }
+  h1 { font-size: clamp(26px, 6vw, 34px); line-height: 1.25; margin: 0; letter-spacing: -.02em; }
+  .lead { color: var(--muted); margin: 10px 0 0; }
+  h2 { font-size: 19px; margin: 40px 0 10px; letter-spacing: -.01em; }
+  p, li { max-width: 64ch; }
+  ul { padding-left: 1.2em; margin: 0 0 12px; }
+  li { margin: 4px 0; }
+  .note { background: var(--leaf-wash); border-left: 3px solid var(--leaf); padding: 14px 16px;
+          border-radius: 0 8px 8px 0; margin: 0 0 16px; }
+  .note p { margin: 0; }
+  .scroller { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; background: var(--surface);
+          border: 1px solid var(--line); border-radius: 8px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { font-size: 13px; color: var(--faint); font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--faint); font-size: 14px; }
+  a { color: var(--leaf); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">북크트리 · booktree</p>
+  <h1>개인정보처리방침</h1>
+  <p class="lead">북크트리는 계정도 광고도 분석 도구도 없는 독서 기록 앱입니다. 읽은 기록은
+  휴대폰 안에만 남고, 책 정보를 찾을 때만 필요한 만큼 밖으로 나갑니다. 무엇이 어디로
+  가는지 아래에 모두 적습니다.</p>
+</header>
+
+<div class="note">
+  <p><strong>한 줄로:</strong> 이름·이메일·전화번호·위치·연락처·광고 식별자를 받지 않습니다.
+  서버에 남는 것은 앱이 만든 무작위 기기 번호와 그날의 요청 횟수뿐이며, 30일 뒤 지워집니다.</p>
+</div>
+
+<h2>1. 휴대폰 안에만 두는 정보</h2>
+<p>아래는 앱을 쓰는 동안 그 휴대폰 안에만 저장되고 서버로 보내지 않습니다. 앱을 지우면 함께 지워집니다.</p>
+<ul>
+  <li>고른 분야, 읽은 책과 읽는 중인 책, 쪽수, 독서 시간, 연속 기록, 그래프 배치</li>
+  <li>화면 밝기·알림 시각 같은 설정</li>
+  <li>앱이 처음 켜질 때 만든 무작위 기기 번호(아래 3번)</li>
+  <li>앱에서 난 오류 기록(최대 약 64KB). <strong>사용자가 앱 정보에서 ‘오류 기록 보내기’를 누를 때만</strong>
+    공유 창을 거쳐, 사용자가 고른 곳(메일·메신저 등)으로 나갑니다</li>
+</ul>
+
+<h2>2. 밖으로 나가는 정보</h2>
+<div class="scroller">
+<table>
+  <thead><tr><th>언제</th><th>무엇이</th><th>어디로</th></tr></thead>
+  <tbody>
+    <tr><td>책을 검색할 때</td><td>검색어</td><td>북크트리 서버를 거쳐 카카오 책 검색</td></tr>
+    <tr><td>인기 대출 도서를 볼 때</td><td>분야 번호(한국십진분류)와 기간</td><td>북크트리 서버를 거쳐 도서관 정보나루</td></tr>
+    <tr><td>책을 등록할 때</td><td>그 책의 ISBN</td><td>북크트리 서버를 거쳐 도서관 정보나루</td></tr>
+    <tr><td>위 세 경우 모두</td><td>무작위 기기 번호</td><td>북크트리 서버까지만 (카카오·정보나루에는 보내지 않습니다)</td></tr>
+    <tr><td>책 표지를 보여 줄 때</td><td>표지 그림 요청</td><td>표지를 가진 이미지 서버(카카오·도서관 정보나루의 표지 주소)에서 직접 받습니다</td></tr>
+  </tbody>
+</table>
+</div>
+<p>인터넷 요청이므로 받는 서버는 통상적으로 접속 IP 주소를 알 수 있습니다. 북크트리는 이 주소를 따로 모으지 않습니다.</p>
+
+<h2>3. 북크트리 서버가 남기는 것</h2>
+<p>카카오·도서관 정보나루의 이용 키를 앱에 넣지 않으려고 북크트리 서버가 요청을 대신 전달합니다.
+한 기기가 하루 조회량을 다 써 버리지 않도록 기기마다 하루 요청 횟수를 셉니다.</p>
+<ul>
+  <li><strong>남기는 것:</strong> 무작위 기기 번호(32자리 16진수), 날짜, 그날의 요청 횟수</li>
+  <li><strong>남기지 않는 것:</strong> 검색어, ISBN, 읽은 책. 다만 서버 운영사의 운영 기록에 요청 주소가
+    짧게(수일) 남을 수 있습니다</li>
+  <li><strong>보유 기간:</strong> 30일. 지난 기록은 서버가 스스로 지웁니다</li>
+  <li>기기 번호는 휴대폰에서 만든 난수라 이름·이메일·전화번호와 이어지지 않습니다. 앱을 지웠다
+    다시 깔면 새 번호가 됩니다</li>
+</ul>
+
+<h2>4. 처리를 맡기는 곳</h2>
+<div class="scroller">
+<table>
+  <thead><tr><th>맡기는 곳</th><th>하는 일</th></tr></thead>
+  <tbody>
+    <tr><td>Supabase Inc.</td><td>북크트리 서버 운영(요청 전달, 하루 요청 횟수 보관). 서버 위치: 대한민국 서울</td></tr>
+  </tbody>
+</table>
+</div>
+<p>북크트리는 개인정보를 판매하거나 광고·마케팅 목적으로 제3자에게 제공하지 않습니다.</p>
+
+<h2>5. 기기 권한</h2>
+<ul>
+  <li><strong>사진 추가</strong> — 공유 카드를 사진첩에 저장할 때만 묻습니다. <strong>추가만</strong> 하며 기존 사진을 읽지 않습니다.
+    안드로이드 10 이하에서는 같은 목적으로 저장소 쓰기 권한을 묻습니다</li>
+  <li><strong>알림</strong> — 설정에서 ‘매일 독서 리마인드’를 켤 때만 묻습니다. 알림은 휴대폰 안에서 걸리며,
+    서버가 보내는 푸시 알림이 아닙니다. 기기를 다시 켰을 때 알림을 되살리기 위해 부팅 완료 신호를 받습니다</li>
+  <li><strong>인터넷</strong> — 위 2번의 요청을 위해 씁니다</li>
+</ul>
+<p>위치, 연락처, 카메라, 마이크, 광고 식별자는 쓰지 않습니다.</p>
+
+<h2>6. 쓰지 않는 것</h2>
+<ul>
+  <li>회원가입·로그인 없음</li>
+  <li>광고 없음, 광고 SDK 없음</li>
+  <li>이용 분석·행동 추적 도구 없음</li>
+  <li>오류 자동 전송 도구 없음 (오류 기록은 1번처럼 사용자가 직접 보낼 때만 나갑니다)</li>
+</ul>
+
+<h2>7. 준비 중인 기능: 노선 만들기</h2>
+<p>AI와 이야기해 읽을 순서를 짜는 유료 기능은 아직 열리지 않았습니다. 열리면 그 대화의 답변이
+북크트리 서버로 가며, 서비스 개선을 위해 30일 동안 보관한 뒤 지웁니다. 대화에 적은 책 제목은
+보관하지 않습니다. 열기 전에 이 방침을 고쳐 알립니다.</p>
+
+<h2>8. 아동</h2>
+<p>북크트리는 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 알면서 수집하지 않습니다.</p>
+
+<h2>9. 이용자의 권리와 삭제</h2>
+<ul>
+  <li>휴대폰 안의 기록은 앱 안의 ‘진행 초기화’나 앱 삭제로 언제든 지울 수 있습니다</li>
+  <li>서버의 하루 요청 횟수 기록은 30일 뒤 자동으로 지워집니다. 기기 번호는 이름과 이어지지 않아
+    서버에서 누구의 기록인지 가려낼 수 없습니다. 앱을 지우면 그 번호도 사라지고, 남은 횟수 기록은
+    30일 안에 없어집니다. 더 궁금한 점은 아래로 연락해 주세요</li>
+</ul>
+
+<h2>10. 안전하게 지키는 방법</h2>
+<ul>
+  <li>모든 요청은 암호화된 연결(HTTPS)로만 오갑니다</li>
+  <li>외부 서비스의 이용 키는 앱에 넣지 않고 서버의 비밀값으로만 둡니다</li>
+  <li>서버의 요청 횟수 표는 공개 접근을 막아 두고, 서버 함수만 읽고 씁니다</li>
+</ul>
+
+<h2>11. 문의</h2>
+<p>개인정보 보호책임자: 이동원<br>
+이메일: <a href="mailto:madongg@gmail.com">madongg@gmail.com</a></p>
+<p>개인정보 침해에 대한 신고·상담은 개인정보침해신고센터(국번 없이 118, privacy.kisa.or.kr)에도 할 수 있습니다.</p>
+
+<h2>12. 바뀐 내용</h2>
+<p>이 방침이 바뀌면 이 쪽과 앱 업데이트 안내에 알립니다.</p>
+
+<footer>
+  <p>시행일 2026년 9월 11일 · 북크트리(booktree) · kr.booktree.app</p>
+</footer>
+
+</div>
+</body>
+</html>
